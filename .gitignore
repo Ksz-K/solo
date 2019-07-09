@@ -2,8 +2,8 @@ css
 icons/css
 icons/fonts/*.zip
 solo-project-1
-
 sass/_*
+src 
 
 # Logs
 logs
