@@ -22,7 +22,7 @@
             <div class="row logo">
                 <div class="col-sm-2 flex">
                     <p class="logo__text">Just do it</p>
-                    <button type="button" class="logo__button"><i class="fas fa-bars"></i></button>
+                    <button type="button" disabled class="logo__button"><i class="fas fa-bars"></i></button>
                 </div>
                 <div class="col-sm-5 nav">
 
@@ -52,8 +52,16 @@
     <main>
 
         <div class="container">
-            <div class="row ">
-                <div class="col-sm-2  nav-left mobile-hide">
+            <div class="row logo mobile-show">
+                <div class="col-sm-2 flex">
+                    <p class="logo__text">Just do it</p>
+                    <button onclick="mobileView()" type="button" class="logo__button"><i
+                            class="fas fa-bars"></i></button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="notStaticMenu" class="col-sm-2  nav-left mobile-hide menuMobileSpaceV">
                     <div class="row wrapped">
                         <div class="col-sm-12 nav__icon_smaller nav__item_height"><span class="icon-profile"></span>
                             <span class="nav__item">Leonardo Dicaprio</span>
@@ -73,10 +81,41 @@
                         <div class="col-sm-12 nav__icon_smaller nav__item_height"><span class="icon-profile"></span>
                             <span class="nav__item">Leonardo Dicaprio</span>
                         </div>
+                        <div class="col-sm-12 nav__icon_smaller nav__item_height"><span class="icon-profile"></span>
+                            <span class="nav__item">Leonardo Dicaprio</span>
+                        </div>
+                        <hr class="fullWidth">
 
+                        <div class="col-sm-12  nav__profile nav__item_height">
+
+                            <h1 class="nav__h1">YOUR MANAGER</h1>
+                            <p class="nav__p"> <img src="http://kszk.vot.pl/kszk.png" align="middle" alt="Manager">
+                                Mikhael E.</p>
+                        </div>
+
+                        <hr class="fullWidth">
+                        <div class="col-12  onlyMobile">
+                            <div class="col-10 flex">
+                                <div class="nav__icon"><span class="icon-wallet nav__icon"></span>$1,500<span
+                                        class="icon-arrow-down-small nav__icon nav__icon_smaller"></span></div>
+                            </div>
+                            <div class="col-2 nav">
+                                <img src="icons/notification.svg" alt="BellAlert">
+                            </div>
+                        </div>
+                        <div class="col-12 onlyMobile">
+                            <div class="col-10 flex">
+                                <div class="nav__icon_smaller"><span class="icon-profile"></span>
+                                    <span class="nav__profile">Leonardo Dicaprio</span>
+                                </div>
+                            </div>
+                            <div class="col-2 flex">
+                                <div class="nav__icon"><span class="icon-quit"></span></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="offset-2 col-sm-10" style="color:white">
+                <div id="mainContent" class="offset-2  menuMobileSpaceV  col-sm-10" style="color:white;">
                     kkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkk Lorem, ipsum
                     dolor sit amet consectetur adipisicing elit. Assumenda nulla,
                     voluptates obcaecati
@@ -264,6 +303,7 @@
 
 
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 
