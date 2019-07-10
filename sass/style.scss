@@ -37,13 +37,29 @@ body {
   padding: 0 2rem 0;
 }
 .nav-left {
-  background-color: red;
+  background-color: #232323;
+  color: #808080;
+  height: 100vh;
+  position: fixed;
+}
+
+.nav__item {
+  font-size: 1rem;
+  padding-left: 1rem;
 }
 .logo__button {
   background-color: #232323;
   border: none;
 }
 
+.nav__item_height {
+  margin-top: 1rem;
+  height: 4vh;
+}
+.wrapped {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 .fa-bars {
   color: grey;
   background-color: #232323;
