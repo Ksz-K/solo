@@ -24,7 +24,7 @@ body {
   display: inline-flex;
 }
 
-.sticky {
+.header--sticky {
   position: sticky;
   top: 0;
 }
@@ -133,8 +133,8 @@ body {
   display: inline-block;
   font-weight: 400;
   color: #808080;
-  text-align: center;
-  vertical-align: middle;
+  margin: auto 0;
+  min-width: 50px;
   user-select: none;
   background-color: transparent;
   border: 1px solid black;
@@ -153,6 +153,28 @@ body {
       @extend .icon-quit;
     }
   }
-  &__notifier {
+
+  &--bigger {
+    transform: scale(2);
+    margin: auto 2rem;
   }
+
+  &--smaller {
+    transform: scale(0.7);
+    margin: auto 2rem;
+  }
+  &__notifier {
+    background-image: url("/Week9101112/icons/sign--R.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+[class*="btn-icon__ico--"]:before {
+  display: inline-block;
+  font-family: "Glyphter";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
