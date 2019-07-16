@@ -12,21 +12,38 @@ body {
   background-color: #111;
 }
 
-.logo {
+.navTop--dark {
   height: 6.67vh;
-
+  display: flex;
   background-color: #232323;
-  font-size: 2rem;
-  line-height: 4rem;
+}
+
+.navTop--light {
+  height: 6.67vh;
+  display: flex;
+  background-color: #fff;
 }
 
 .flex {
-  display: inline-flex;
+  display: flex;
 }
 
+.lleft {
+  justify-content: flex-start;
+}
+
+.navTop--orderRight {
+  justify-content: flex-end;
+}
 .header--sticky {
   position: sticky;
   top: 0;
+}
+
+.logo {
+  max-width: 70%;
+  height: auto;
+  margin: 0 1rem;
 }
 .logo__text {
   font-family: $logo-font;
@@ -131,13 +148,13 @@ body {
 
 .btn-icon {
   display: inline-block;
+
   font-weight: 400;
   color: #808080;
-  margin: auto 0;
+  margin: auto;
   min-width: 50px;
   user-select: none;
   background-color: transparent;
-  border: 1px solid black;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -152,16 +169,32 @@ body {
     &--quit {
       @extend .icon-quit;
     }
+
+    &--wallet {
+      @extend .icon-wallet;
+    }
+
+    &--profile {
+      @extend .icon-profile;
+    }
+
+    &--arrow-down {
+      @extend .icon-arrow-down;
+    }
+  }
+
+  &--noBorder {
+    border: none;
   }
 
   &--bigger {
-    transform: scale(2);
-    margin: auto 2rem;
+    transform: scale(1.5);
+    margin: auto 1.5rem;
   }
 
   &--smaller {
     transform: scale(0.7);
-    margin: auto 2rem;
+    margin: auto 1rem;
   }
   &__notifier {
     background-image: url("/Week9101112/icons/sign--R.svg");
