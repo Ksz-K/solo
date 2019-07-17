@@ -18,6 +18,15 @@ body {
   background-color: #232323;
 }
 
+.navTop__crate--remSpacing {
+  word-spacing: 1rem;
+}
+
+.navTop__crate--remSpacing:hover {
+  background-color: #333;
+  border-left: 3px solid #ff4500;
+}
+
 .navTop--light {
   height: 6.67vh;
   display: flex;
@@ -26,10 +35,6 @@ body {
 
 .flex {
   display: flex;
-}
-
-.lleft {
-  justify-content: flex-start;
 }
 
 .navTop--orderRight {
@@ -53,11 +58,13 @@ body {
   line-height: 1rem;
   padding: 0 2rem 0;
 }
-.nav-left {
+.navLeft {
   background-color: #232323;
   color: #808080;
   height: 100vh;
   position: fixed;
+  margin: 0;
+  padding: 0;
 }
 
 .nav__item {
@@ -73,9 +80,13 @@ body {
   margin-top: 1rem;
   height: 4vh;
 }
-.wrapped {
-  flex-wrap: wrap;
+.navLeft--column {
+  display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 .fa-bars {
   color: grey;
@@ -161,6 +172,9 @@ body {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
 
+  &:hover {
+    color: #fff;
+  }
   &__ico {
     &--bell {
       @extend .icon-notification;
@@ -180,6 +194,34 @@ body {
 
     &--arrow-down {
       @extend .icon-arrow-down;
+    }
+
+    &--general {
+      @extend .icon-general;
+    }
+
+    &--details {
+      @extend .icon-details;
+    }
+
+    &--links {
+      @extend .icon-links;
+    }
+
+    &--banners {
+      @extend .icon-banners;
+    }
+
+    &--personaldata {
+      @extend .icon-personaldata;
+    }
+
+    &--payout {
+      @extend .icon-payout;
+    }
+
+    &--postback {
+      @extend .icon-postback;
     }
   }
 

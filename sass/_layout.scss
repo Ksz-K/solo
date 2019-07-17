@@ -19,6 +19,11 @@
   height: 100%;
   border-bottom: 1px solid rgba(128, 128, 128, 0.4);
   border-right: 1px solid rgba(128, 128, 128, 0.4);
+  font-family: "Lato", sans-serif;
+}
+
+.navTop__crate--noBorder {
+  border: none;
 }
 
 .navTop__crate--verticalAllignP {
