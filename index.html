@@ -25,8 +25,8 @@
             </div>
 
             <div class="col-10 navMenu--light navMenu--orderRight">
-                <div class="navMenu__crate">
-                    <div class="col-sm-auto"></div>
+                <div class="navMenu__crate" style="max-width: 100%; ">
+                    <div class="col-sm-auto">&nbsp;</div>
                 </div>
                 <div class="navMenu__crate">
                     <div class=" col-sm-auto navMenu__crate--verticalAllignP">
@@ -40,7 +40,6 @@
                         <p><span class="btn-icon btn-icon__ico--bell btn-icon__notifier"></span></p>
                     </div>
                 </div>
-
                 <div class="navMenu__crate">
                     <div class="col-sm-auto navMenu__crate--verticalAllignP">
                         <p><span class="btn-icon btn-icon__ico--profile"></span><span class="navMenu__crate--colorBlue">
@@ -52,51 +51,45 @@
                         <button type="button" class="btn-icon btn-icon__ico--quit btn-icon--noBorder"></button>
                     </div>
                 </div>
-
-
             </div>
         </div>
-
-
     </header>
-
-
-
     <main>
 
         <div class="container">
             <div class="row logo mobile-show">
-                <div class="col-5 flex">
-                    <p class="logo__text">Just do it</p>
-                    <button onclick="mobileView()" type="button" class="logo__button"><i
-                            class="fas fa-bars"></i></button>
+                <div class="widthMobile navMenu--dark navMenu__crate--verticalAllignP">
+                    <p><span><img class="logo" src="icons/logo.png" alt="logo"></span></p>
+                    <p><button onclick="mobileView()" class="btn-icon btn-icon--noBorder"><i
+                                class="fas fa-bars fa-2x"></i></button>
+                    </p>
                 </div>
             </div>
 
             <div class="row">
-                <div id="notStaticMenu" class="col-sm-2  navLeft mobile-hide menuMobileSpaceV">
+                <div id="notStaticMenu" class="widthMobile col-sm-2  navLeft mobile-hide menuMobileSpaceV">
                     <div class="navLeft--column">
                         <div class="navMenu__crate navMenu__crate--noBorder navMenu__crate--fullWidth">
-                            <div class="col-sm-auto navMenu__crate--remSpacing">
+                            <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
                                 <p><span class=" btn-icon btn-icon__ico--general">&nbsp;General</span></p>
                             </div>
-                            <div class="col-sm-auto navMenu__crate--remSpacing">
+                            <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
                                 <p><span class=" btn-icon btn-icon__ico--details">&nbsp;Details</span></p>
                             </div>
-                            <div class="col-sm-auto navMenu__crate--remSpacing">
+                            <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
                                 <p><span class=" btn-icon btn-icon__ico--links">&nbsp;Links</span>
                                 </p>
                             </div>
-                            <div class="col-sm-auto navMenu__crate--remSpacing">
+                            <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
                                 <p><span class=" btn-icon btn-icon__ico--banners">&nbsp;Banners</span></p>
                             </div>
-                            <div class="col-sm-auto navMenu__crate--remSpacing">
+                            <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
                                 <p><span class=" btn-icon btn-icon__ico--personaldata">&nbsp;Personal-data</span></p>
                             </div>
-                            <div class="col-sm-auto navMenu__crate--remSpacing">
+                            <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
                                 <p><span class=" btn-icon btn-icon__ico--payout">&nbsp;Payout</span></p>
                             </div>
-                            <div class="col-sm-auto navMenu__crate--remSpacing">
+                            <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
                                 <p><span class=" btn-icon btn-icon__ico--postback">&nbsp;Postback</span></p>
                             </div>
                         </div>
@@ -109,7 +102,7 @@
                                 <h4>Your Manager</h4>
                                 <p class="btn-icon__notifier2"><svg width="100" height="15">
                                         <circle cx="68" cy="5" r="3" stroke="green" stroke-width="4" fill="green" />
-                                    </svg></p> <img src="images/Brendan_Eich.jpg" align="middle" alt="Manager"><span
+                                    </svg></p> <img src="images/Brendan_Eich.jpg" alt="Manager"><span
                                     class=" navMenu__crate--colorBlue">
                                     Brendan E.</span>
                             </div>
@@ -118,93 +111,90 @@
 
 
                         <hr class="fullWidth">
-                        <div class="col-12  onlyMobile">
-                            <div class="col-10 flex">
-                                <div class="nav__icon"><span class="icon-wallet nav__icon"></span>$1,500<span
-                                        class="icon-arrow-down-small nav__icon nav__icon_smaller"></span></div>
-                            </div>
-                            <div class="col-2 nav">
-                                <img src="icons/notification.svg" alt="BellAlert">
-                            </div>
-                        </div>
-                        <div class="col-12 onlyMobile">
-                            <div class="col-10 flex">
-                                <div class="nav__icon_smaller"><span class="icon-profile"></span>
-                                    <span class="nav__profile">Leonardo Dicaprio</span>
-                                </div>
-                            </div>
-                            <div class="col-2 flex">
-                                <div class="nav__icon"><span class="icon-quit"></span></div>
+
+                        <div class="onlyMobile navMenu__crate navMenu__crate--noBorder navMenu__crate--fullWidth">
+                            <div class="navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
+                                <p><span class="btn-icon btn-icon__ico--wallet"></span><span>$1,500</span>
+                                    <button type="button"
+                                        class="btn-icon btn-icon__ico--arrow-down btn-icon--noBorder"></button></p>
                             </div>
                         </div>
+                        <div
+                            class="onlyMobile navMenu__crate navMenu__crate--noBorder navMenu__crate--fullWidth navMenu__crate--leftBorderFocus">
+
+                            <p><span class="btn-icon btn-icon__ico--profile "></span><span
+                                    class="navMenu__crate--colorBlue">
+                                    Leo Dicaprio</span></p>
+
+                        </div>
+                        <div
+                            class="onlyMobile navMenu__crate navMenu__crate--noBorder navMenu__crate--fullWidth navMenu__crate--leftBorderFocus navMenu--orderRight">
+
+                            <div class="onlyMobile"> <button type="button"
+                                    class="btn-icon btn-icon__ico--quit btn-icon--noBorder"></button>
+                            </div>
+                        </div>
+
 
                     </div>
                 </div>
                 <div id="mainContent" class="offset-2   menuMobileSpaceV  col-sm-10">
                     <div class="mainContent mainContent--noBottom">
-                        1 2 3 kkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkk
-                        Lorem,
-                        ipsum
-                        dolor sit amet consectetur adipisicing elit. Assumenda nulla,
-                        voluptates obcaecati
-                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
-                        amet!
-                        doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis amet!
-                        tetur adipisicing elit. Assumenda nulla, voluptates obcaecati
-                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
-                        amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.
+                        <div class=mainContent__title>
+                            <h4>General statistics</h4>
+                        </div>
+                        <div class="mainContent__tellTale" style="flex-direction: row;">
+                            <form>
+                                <input id="date1" type="date" name="startDay">
+                            </form>
+                            <form>
+                                <input type="date" name="endDay" id="date2">
+                            </form>
+                            <button type="button"
+                                class="btn-icon btn-icon--colorOrange btn-icon__ico--refresh btn-icon--noBorder btn-icon--smaller"></button>
+                            <button type="button" class="btn-icon  btn-icon__ico--calendar btn-icon--noBorder"></button>
+                        </div>
+                        <div class="mainContent__workArea">
 
-                        Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
-                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
-                        amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
-                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
-                        amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.doloribus cumque pariatur, ad, voluptatum
-                        maiores
-                        sequi veritatis amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.
+                            <table class="tableFinance">
+                                <tr>
+                                    <td>Visit Signups</td>
+                                    <td>124</td>
+                                    <td>Net deposit</td>
+                                    <td>564</td>
+                                </tr>
+                                <tr>
+                                    <td>FTD</td>
+                                    <td>445</td>
+                                    <td>Turn over</td>
+                                    <td>432</td>
+                                </tr>
 
-                        Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
-                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
-                        amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
-                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
-                        amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.doloribus cumque pariatur, ad, voluptatum
-                        maiores
-                        sequi veritatis amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.
-
-                        Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
-                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
-                        amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
-                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
-                        amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.doloribus cumque pariatur, ad, voluptatum
-                        maiores
-                        sequi veritatis amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.
-
-                        Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
-                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
-                        amet!enda nulla, voluptates obcaecati
-                        delectus dolores explicabo doloribus cumque parinsequuntur quibusdam molestiae! Amet.
-
-                        Et minus consequuntur quibusdam molestiae! Amet.
-                        Lore nulla, voluptates obcaecati
-                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
-                        amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.
+                                <tr>
+                                    <td class="tableFinance__chartInfo">Earnings chart</td>
+                                </tr>
+                            </table>
+                            <div class="tableFinance__infoSelector">
+                                <button class="btn-icon btn-icon--noBorder btn-icon--colorGrey ">
+                                    <svg width="18" height="22">
+                                        <circle cx="8" cy="12" r="7" fill="blue" />
+                                    </svg>Signups
+                                </button>
+                                <button class="btn-icon btn-icon--noBorder btn-icon--colorGrey ">
+                                    <svg width="18" height="22">
+                                        <circle cx="8" cy="12" r="7" fill="orange" />
+                                    </svg>FTD
+                                </button>
+                                <button class="btn-icon btn-icon--noBorder btn-icon--colorGrey ">
+                                    <svg width="18" height="22">
+                                        <circle cx="8" cy="12" r="7" fill="green" />
+                                    </svg>Earned
+                                </button>
+                            </div>
+                            <div class="fakeDraw">
+                                <img src="images/picture1.png">
+                            </div>
+                        </div>
                     </div>
                     <div class="mainContent">
                         1 2 3 kkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk kkkkkkkkkkkkkkkkkkkkkkkkk
@@ -221,24 +211,13 @@
                         Et minus consequuntur quibusdam molestiae! Amet.
 
                         Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates
+                        obcaecati
                         delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
                         amet!
                         Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
-                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
-                        amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.doloribus cumque pariatur, ad, voluptatum
-                        maiores
-                        sequi veritatis amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.
-
-                        Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
-                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
-                        amet!
-                        Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates
+                        obcaecati
                         delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
                         amet!
                         Et minus consequuntur quibusdam molestiae! Amet.doloribus cumque pariatur, ad, voluptatum
@@ -247,11 +226,13 @@
                         Et minus consequuntur quibusdam molestiae! Amet.
 
                         Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates
+                        obcaecati
                         delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
                         amet!
                         Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates
+                        obcaecati
                         delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
                         amet!
                         Et minus consequuntur quibusdam molestiae! Amet.doloribus cumque pariatur, ad, voluptatum
@@ -260,7 +241,23 @@
                         Et minus consequuntur quibusdam molestiae! Amet.
 
                         Et minus consequuntur quibusdam molestiae! Amet.
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates obcaecati
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates
+                        obcaecati
+                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
+                        amet!
+                        Et minus consequuntur quibusdam molestiae! Amet.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates
+                        obcaecati
+                        delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
+                        amet!
+                        Et minus consequuntur quibusdam molestiae! Amet.doloribus cumque pariatur, ad, voluptatum
+                        maiores
+                        sequi veritatis amet!
+                        Et minus consequuntur quibusdam molestiae! Amet.
+
+                        Et minus consequuntur quibusdam molestiae! Amet.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nulla, voluptates
+                        obcaecati
                         delectus dolores explicabo doloribus cumque pariatur, ad, voluptatum maiores sequi veritatis
                         amet!enda nulla, voluptates obcaecati
                         delectus dolores explicabo doloribus cumque parinsequuntur quibusdam molestiae! Amet.

@@ -22,7 +22,7 @@ body {
   word-spacing: 1rem;
 }
 
-.navMenu__crate--remSpacing:hover {
+.navMenu__crate--leftBorderFocus:hover {
   background-color: #333;
   border-left: 3px solid #ff4500;
 }
@@ -43,6 +43,7 @@ body {
 }
 
 .navMenu--orderRight {
+  display: flex;
   justify-content: flex-end;
 }
 .header--sticky {
@@ -68,7 +69,6 @@ body {
   color: #808080;
   height: 100vh;
   position: fixed;
-  margin: 0;
   padding: 0;
 }
 
@@ -132,7 +132,7 @@ body {
 .fullWidth {
   width: 98%;
   border-top: 0.1rem solid #666b71;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
 .navMenu__crate img {
@@ -141,6 +141,7 @@ body {
   border-radius: 50%;
   margin-left: 0;
   margin-right: 1rem;
+  vertical-align: middle;
 }
 
 %is-red {
@@ -151,9 +152,12 @@ body {
   text-transform: uppercase;
 }
 
+.navMenu__crate--leftBorderFocus:hover .btn-icon {
+  color: #fff;
+}
+
 .btn-icon {
   display: inline-block;
-
   font-weight: 400;
   color: #808080;
   margin: auto;
@@ -166,8 +170,16 @@ body {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
 
-  &:hover {
-    color: #fff;
+  &--colorOrange {
+    background-color: #ff4500;
+    border-radius: 5px;
+  }
+
+  &--colorGrey {
+    background-color: rgba(128, 128, 128, 0.4);
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
   }
   &__ico {
     &--bell {
@@ -217,6 +229,12 @@ body {
     &--postback {
       @extend .icon-postback;
     }
+    &--calendar {
+      @extend .icon-calendar;
+    }
+    &--refresh {
+      @extend .icon-refresh;
+    }
   }
 
   &--noBorder {
@@ -230,7 +248,7 @@ body {
 
   &--smaller {
     transform: scale(0.7);
-    margin: auto 1rem;
+    margin: auto 0.1rem;
   }
   &__notifier {
     background-image: url("/Week9101112/icons/sign--R.svg");
@@ -250,4 +268,98 @@ body {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.mainContent__title {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  text-transform: uppercase;
+  padding-left: 1rem;
+  color: #808080;
+}
+
+.mainContent__title h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mainContent__tellTale {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  margin-left: -6px;
+}
+
+input[type="date"] {
+  appearance: none;
+  border: none;
+  font-size: 1.2rem;
+  outline: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.tableFinance {
+  width: auto;
+  margin-left: 6vw;
+  margin-right: auto;
+}
+
+.tableFinance tr td:nth-child(odd) {
+  color: #808080;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: left;
+  padding-right: 7rem;
+  padding-left: 5rem;
+}
+
+.tableFinance tr td:nth-child(even) {
+  color: #000;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.tableFinance td {
+  position: relative;
+  padding-top: 0.7rem;
+}
+
+.tableFinance td:after {
+  content: "";
+  display: block;
+  width: 84%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.4);
+  position: absolute;
+  top: 100%;
+}
+
+.tableFinance__chartInfo {
+  padding-top: 7rem !important;
+}
+
+.tableFinance td:last-child:after {
+  content: none;
+}
+
+.tableFinance__infoSelector {
+  height: auto;
+  margin: 4vh auto;
+  display: block;
+  text-align: center;
+}
+
+.fakeDraw {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.tableFinance__infoSelector > .btn-icon:hover {
+  background-color: transparent;
+  color: #0000ff;
 }

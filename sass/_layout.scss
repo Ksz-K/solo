@@ -11,6 +11,7 @@
   display: flex;
   margin-right: auto;
   margin-left: auto;
+  z-index: 1000;
 }
 
 .navMenu__crate {
@@ -147,6 +148,8 @@
 }
 
 .mainContent {
+  display: flex;
+  flex-direction: column;
   border: 15px solid rgba(255, 255, 255, 0.9);
 
   background-clip: padding-box;
@@ -156,6 +159,13 @@
 .mainContent--noBottom {
   border-bottom: none;
 }
+
+@media (max-width: 426px) {
+  .widthMobile {
+    width: 200px;
+  }
+}
+
 @media (min-width: 576px) {
   .offset-2 {
     margin-left: 16.666667%;

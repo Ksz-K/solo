@@ -7,15 +7,7 @@ function mobileView() {
     } else {
         document.getElementById('notStaticMenu').classList.add('mobile-hide')
     }
-
-    var isPlace = document.querySelector('#mainContent').classList.contains('menuMobileSpaceH');
-
-    if (isPlace) {
-        document.getElementById('mainContent').classList.remove('menuMobileSpaceH');
-
-    } else {
-        document.getElementById('mainContent').classList.add('menuMobileSpaceH')
-    }
-
 }
 
+document.getElementById('date1').value = new Date().toISOString().substring(0, 10);
+document.getElementById('date2').value = new Date().toISOString().substring(0, 10);
