@@ -307,7 +307,41 @@ body {
   padding: 1rem 0.5rem;
   text-align: center;
 }
+.mainContent__tellTaleLeft {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: flex-start;
+  margin-left: 50%;
+  position: relative;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  padding-inline-start: 0;
+}
 
+.mainContent__tellTaleRight {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: flex-start;
+  margin-right: 50%;
+  position: relative;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  padding-inline-start: 0;
+}
+
+.mainContent__tellTale--key {
+  color: #808080;
+  font-weight: bold;
+  text-align: left;
+}
+
+.mainContent__tellTale--value {
+  color: #000;
+}
 form {
   display: inline-block;
   margin-left: -6px;

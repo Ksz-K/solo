@@ -171,6 +171,29 @@
   border-bottom: none;
 }
 
+.mainContent__workArea {
+  display: block;
+}
+
+.mainContent--split {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.mainContent__leftHalf,
+.mainContent__rightHalf {
+  flex: 1;
+  width: 100%;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+.mainContent__title--small {
+  margin-left: 25%;
+  color: #808080;
+  font-weight: bold;
+}
 @media (max-width: 426px) {
   .widthMobile {
     width: 200px;
