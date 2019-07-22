@@ -35,7 +35,16 @@
   height: 100%;
   align-items: center;
   justify-content: center;
+}
+
+.navMenu__crate--verticalAllignP p {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   padding: 0.5rem;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 .navMenu__crate--colorBlue {

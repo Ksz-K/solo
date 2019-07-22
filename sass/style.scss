@@ -20,6 +20,11 @@ body {
 
 .navMenu__crate--remSpacing {
   word-spacing: 1rem;
+  white-space: nowrap;
+}
+
+.navMenu__crate--fullWidth {
+  width: 100%;
 }
 
 .navMenu__crate--leftBorderFocus:hover {
@@ -49,6 +54,7 @@ body {
 .header--sticky {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .logo {
@@ -379,33 +385,28 @@ input[type="date"] {
 }
 
 .tableLinks {
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+.tableLinks--hideIcons {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
 }
 
 .tableLinks td:nth-child(1) {
-  width: 40%;
   color: #808080;
   text-align: left;
-  padding-top: 0.5rem;
+  width: 35%;
 }
 
 .tableLinks td:nth-child(2) {
-  width: 40%;
   color: #0000ff;
   text-align: left;
-  padding-top: 0.5rem;
-}
-.tableLinks td:nth-child(3) {
-  visibility: hidden;
-  width: 10%;
-  text-align: right;
-}
-.tableLinks td:nth-child(4) {
-  visibility: hidden;
-  width: 10%;
-  text-align: left;
+  width: 65%;
 }
 
 .tableLinks tr:hover {
@@ -413,12 +414,15 @@ input[type="date"] {
   cursor: pointer;
 }
 
-.tableLinks tr:hover td {
+.tableLinks tr:hover .tableLinks--hideIcons {
   visibility: visible;
 }
 
 .tableLinks td {
   border-top: 1px solid rgba(128, 128, 128, 0.4);
+  position: relative;
   height: 2.5rem;
+  line-height: 2rem;
+  margin: auto;
   display: inline-block;
 }
