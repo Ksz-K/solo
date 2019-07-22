@@ -246,6 +246,7 @@ body {
     &--calendar {
       @extend .icon-calendar;
     }
+
     &--refresh {
       @extend .icon-refresh;
     }
@@ -259,6 +260,12 @@ body {
 
   &--noBorder {
     border: none;
+  }
+
+  &--positionDate {
+    position: absolute;
+    right: 0;
+    transform: translate(-1px, -30px);
   }
 
   &--bigger {
@@ -280,6 +287,15 @@ body {
     font-size: 1px;
   }
 }
+
+.mainContent__formCalendar {
+  position: relative;
+}
+
+.mainContent__formCalendar:hover .btn-icon__ico--calendar {
+  display: none;
+}
+
 [class*="btn-icon__ico--"]:before {
   display: inline-block;
   font-family: "Glyphter";
@@ -342,6 +358,7 @@ body {
 .mainContent__tellTale--value {
   color: #000;
 }
+
 form {
   display: inline-block;
   margin-left: -6px;
