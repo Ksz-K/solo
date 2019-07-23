@@ -9,42 +9,21 @@
 }
 
 body {
-  background-color: #111;
+  background-color: $darkDeep-gray;
 }
 
-.navMenu--dark {
-  height: 6.67vh;
-  display: flex;
-  background-color: #232323;
-}
+.navMenu {
+  &--dark {
+    height: 6.67vh;
+    display: flex;
+    background-color: #232323;
+  }
 
-.navMenu__crate--remSpacing {
-  word-spacing: 1rem;
-  white-space: nowrap;
-}
-
-.navMenu__crate--fullWidth {
-  width: 100%;
-}
-
-.navMenu__crate--leftBorderFocus:hover {
-  background-color: #333;
-  border-left: 3px solid #ff4500;
-}
-
-.navMenu__crate--txtFocus {
-  margin: auto;
-  text-align: center;
-  text-transform: uppercase;
-}
-.navMenu--light {
-  height: 6.67vh;
-  display: flex;
-  background-color: #fff;
-}
-
-.flex {
-  display: flex;
+  &--light {
+    height: 6.67vh;
+    display: flex;
+    background-color: #fff;
+  }
 }
 
 .navMenu--orderRight {
@@ -62,17 +41,10 @@ body {
   height: auto;
   margin: 0 1rem;
 }
-.logo__text {
-  font-family: $logo-font;
-  color: #fff;
-  background-color: #232323;
-  font-size: 1.5rem;
-  line-height: 1rem;
-  padding: 0 2rem 0;
-}
+
 .navLeft {
   background-color: #232323;
-  color: #808080;
+  color: $base-gray;
   height: 100vh;
   position: fixed;
   padding: 0;
@@ -107,12 +79,12 @@ body {
 .nav {
   background-color: #fff;
   text-align: center;
-  border-left: 1px solid #808080;
-  border-bottom: 1px solid #808080;
+  border-left: 1px solid $base-gray;
+  border-bottom: 1px solid $base-gray;
 }
 
 .nav__icon {
-  color: #808080;
+  color: $base-gray;
   font-family: $font-default;
   margin: 0px;
   font-size: 1.5rem;
@@ -122,7 +94,6 @@ body {
 
 .nav__profile {
   color: #4a4af5;
-  // display: inline-flex;
   font-family: $font-default;
   padding: 0 1rem;
   font-size: 1rem;
@@ -168,7 +139,7 @@ body {
 .btn-icon {
   display: inline-block;
   font-weight: 400;
-  color: #808080;
+  color: $base-gray;
   margin: auto;
   min-width: 50px;
   user-select: none;
@@ -180,7 +151,7 @@ body {
     box-shadow 0.15s ease-in-out;
 
   &--colorOrange {
-    background-color: #ff4500;
+    background-color: $base-orange;
     border-radius: 5px;
   }
 
@@ -189,11 +160,11 @@ body {
   }
 
   &--txtOrange {
-    color: #ff4500;
+    color: $base-orange;
   }
 
   &--colorGrey {
-    background-color: rgba(128, 128, 128, 0.4);
+    background-color: $base-background;
     border-radius: 5px;
     display: inline-flex;
     align-items: center;
@@ -310,10 +281,10 @@ body {
 }
 
 .mainContent__title {
-  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  border-bottom: 1px solid $base-border;
   text-transform: uppercase;
   padding-left: 1rem;
-  color: #808080;
+  color: $base-gray;
 }
 
 .mainContent__title h4 {
@@ -325,10 +296,10 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  color: #808080;
+  color: $base-gray;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  border-bottom: 1px solid $base-border;
 }
 
 .mainContent__personalForm--input {
@@ -359,7 +330,7 @@ body {
 }
 
 .mainContent__tellTale {
-  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  border-bottom: 1px solid $base-border;
   padding: 1rem 0.5rem;
   text-align: center;
 }
@@ -372,7 +343,7 @@ body {
   align-content: flex-start;
   margin-left: 50%;
   position: relative;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  border-bottom: 1px solid $base-border;
   padding-inline-start: 0;
 }
 
@@ -385,12 +356,12 @@ body {
   align-content: flex-start;
   margin-right: 50%;
   position: relative;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  border-bottom: 1px solid $base-border;
   padding-inline-start: 0;
 }
 
 .mainContent__tellTale--key {
-  color: #808080;
+  color: $base-gray;
   font-weight: bold;
   text-align: left;
 }
@@ -408,51 +379,7 @@ input[type="date"] {
   appearance: none;
   border: none;
   font-size: 1.2rem;
-  outline: 1px solid rgba(128, 128, 128, 0.4);
-}
-
-.tableFinance {
-  width: auto;
-  margin-left: 6vw;
-  margin-right: auto;
-}
-
-.tableFinance tr td:nth-child(odd) {
-  color: #808080;
-  font-weight: bold;
-  font-size: 1.2rem;
-  text-align: left;
-  padding-right: 7rem;
-  padding-left: 5rem;
-}
-
-.tableFinance tr td:nth-child(even) {
-  color: #000;
-  font-size: 1.2rem;
-  text-align: right;
-}
-
-.tableFinance td {
-  position: relative;
-  padding-top: 0.7rem;
-}
-
-.tableFinance td:after {
-  content: "";
-  display: block;
-  width: 84%;
-  height: 1px;
-  background-color: rgba(128, 128, 128, 0.4);
-  position: absolute;
-  top: 100%;
-}
-
-.tableFinance__chartInfo {
-  padding-top: 7rem !important;
-}
-
-.tableFinance td:last-child:after {
-  content: none;
+  outline: 1px solid $base-border);
 }
 
 .tableFinance__infoSelector {
@@ -480,40 +407,40 @@ input[type="date"] {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-}
 
-.tableLinks--hideIcons {
-  visibility: hidden;
-  position: absolute;
-  right: 0;
-}
+  & td {
+    border-top: 1px solid $base-border;
+    position: relative;
+    height: 2.5rem;
+    line-height: 2rem;
+    margin: auto;
+    display: inline-block;
+  }
 
-.tableLinks td:nth-child(1) {
-  color: #808080;
-  text-align: left;
-  width: 35%;
-}
+  & td:nth-child(1) {
+    color: $base-gray;
+    text-align: left;
+    width: 35%;
+  }
 
-.tableLinks td:nth-child(2) {
-  color: #0000ff;
-  text-align: left;
-  width: 65%;
-}
+  & td:nth-child(2) {
+    color: #0000ff;
+    text-align: left;
+    width: 65%;
+  }
 
-.tableLinks tr:hover {
-  background: rgba(128, 128, 128, 0.4);
-  cursor: pointer;
-}
+  & tr:hover {
+    background: $base-background;
+    cursor: pointer;
+  }
 
-.tableLinks tr:hover .tableLinks--hideIcons {
-  visibility: visible;
-}
+  & tr:hover .tableLinks--hideIcons {
+    visibility: visible;
+  }
 
-.tableLinks td {
-  border-top: 1px solid rgba(128, 128, 128, 0.4);
-  position: relative;
-  height: 2.5rem;
-  line-height: 2rem;
-  margin: auto;
-  display: inline-block;
+  &--hideIcons {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+  }
 }
