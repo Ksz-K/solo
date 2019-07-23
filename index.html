@@ -71,26 +71,28 @@
                     <div class="navLeft--column">
                         <div class="navMenu__crate navMenu__crate--noBorder navMenu__crate--fullWidth">
                             <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
-                                <p><span class=" btn-icon btn-icon__ico--general">&nbsp;General</span></p>
+                                <p><span class="btn-icon btn-icon__ico--general"
+                                        onclick="goToGeneral()">&nbsp;General</span></p>
                             </div>
                             <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
-                                <p><span class=" btn-icon btn-icon__ico--details">&nbsp;Details</span></p>
+                                <p><span class="btn-icon btn-icon__ico--details">&nbsp;Details</span></p>
                             </div>
                             <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
-                                <p><span class=" btn-icon btn-icon__ico--links">&nbsp;Links</span>
+                                <p><span class="btn-icon btn-icon__ico--links" onclick="goToLinks()">&nbsp;Links</span>
                                 </p>
                             </div>
                             <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
-                                <p><span class=" btn-icon btn-icon__ico--banners">&nbsp;Banners</span></p>
+                                <p><span class="btn-icon btn-icon__ico--banners">&nbsp;Banners</span></p>
                             </div>
                             <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
-                                <p><span class=" btn-icon btn-icon__ico--personaldata">&nbsp;Personal data</span></p>
+                                <p><span class="btn-icon btn-icon__ico--personaldata"
+                                        onclick="goToPersonal()">&nbsp;Personal data</span></p>
                             </div>
                             <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
-                                <p><span class=" btn-icon btn-icon__ico--payout">&nbsp;Payout</span></p>
+                                <p><span class="btn-icon btn-icon__ico--payout">&nbsp;Payout</span></p>
                             </div>
                             <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
-                                <p><span class=" btn-icon btn-icon__ico--postback">&nbsp;Postback</span></p>
+                                <p><span class="btn-icon btn-icon__ico--postback">&nbsp;Postback</span></p>
                             </div>
                         </div>
                         <hr class="fullWidth">
@@ -140,7 +142,7 @@
                 </div>
                 <div id="mainContent" class="offset-2   menuMobileSpaceV  col-sm-10">
 
-                    <div class="mainContent mainContent--noBottom">
+                    <div id="general" class="mainContent mainContent--noBottom">
                         <div class="mainContent__title">
                             <h4>General statistics</h4>
 
@@ -214,7 +216,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mainContent mainContent--noBottom">
+                    <div id="links" class="mainContent mainContent--noBottom">
                         <div class=mainContent__title>
                             <h4>Links</h4>
                         </div>
@@ -329,7 +331,7 @@
 
                         </div>
                     </div>
-                    <div class="mainContent">
+                    <div id="personal" class="mainContent">
                         <div class=mainContent__title>
                             <h4>Personal Data</h4>
                         </div>
