@@ -154,6 +154,9 @@ body {
   color: red;
 }
 
+.fullWidthForm {
+  width: 100%;
+}
 .icon {
   text-transform: uppercase;
 }
@@ -318,6 +321,43 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.mainContent__personalForm {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: #808080;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.mainContent__personalForm--input {
+}
+.mainContent__personalForm--input::placeholder {
+  color: #000;
+  opacity: 1;
+  font-size: 0.8rem;
+  padding-left: 0.4rem;
+}
+
+.mainContent__personalForm--positioning {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+}
+
+.mainContent__personalForm--positioning label {
+  margin-left: 30%;
+}
+
+.mainContent__personalForm--positioning input {
+  position: absolute;
+  margin-left: 50%;
+}
+
 .mainContent__tellTale {
   border-bottom: 1px solid rgba(128, 128, 128, 0.4);
   padding: 1rem 0.5rem;
@@ -422,7 +462,7 @@ input[type="date"] {
   text-align: center;
 }
 
-.fakeDraw {
+.fakeDraw img {
   max-width: 100%;
   height: auto;
   margin: 2rem auto;
