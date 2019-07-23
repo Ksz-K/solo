@@ -1,7 +1,7 @@
+@import "variables";
 @import "normalize";
 @import "layout";
 @import "glyphter";
-@import "variables";
 @import "mixins";
 
 * {
@@ -16,7 +16,7 @@ body {
   &--dark {
     height: 6.67vh;
     display: flex;
-    background-color: #232323;
+    background-color: $darkNav-gray;
   }
 
   &--light {
@@ -379,7 +379,7 @@ input[type="date"] {
   appearance: none;
   border: none;
   font-size: 1.2rem;
-  outline: 1px solid $base-border);
+  outline: 1px solid $base-border;
 }
 
 .tableFinance__infoSelector {
