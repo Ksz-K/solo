@@ -162,6 +162,7 @@
 
 .mobile-show {
   position: fixed;
+  z-index: 1;
 }
 
 .menuMobileSpaceV {
@@ -215,6 +216,22 @@
 @media (max-width: 426px) {
   .widthMobile {
     width: 200px;
+  }
+
+  .tableLinks td:nth-child(1) {
+    font-size: 0.7rem;
+  }
+
+  .tableLinks td:nth-child(2) {
+    font-size: 0.7rem;
+  }
+
+  .mainContent__tellTale--key {
+    font-size: 0.7rem;
+  }
+
+  .mainContent__tellTale--value {
+    font-size: 0.7rem;
   }
 }
 
