@@ -19,7 +19,7 @@
     <header class="header--sticky header--desktop-visible">
         <div class="navMenu">
             <div class="col-sm-2 navMenu--dark navMenu__crate--verticalAllignP">
-                <p><span><img class="logo" src="icons/logo.png" alt="logo"></span></p>
+                <p><span onclick="openModal('#nike')"><img class="logo" src="icons/logo.png" alt="logo"></span></p>
                 <p><button disabled class="btn-icon btn-icon--noBorder"><i class="fas fa-bars fa-2x"></i></button></p>
             </div>
 
@@ -146,7 +146,7 @@
                             <h4>General statistics</h4>
 
                         </div>
-                        <div class="mainContent__tellTale" style="flex-direction: row;">
+                        <div class="mainContent__tellTale">
                             <form class="mainContent__formCalendar">
                                 <input id="date1" type="date" name="startDay">
                                 <span
@@ -167,24 +167,24 @@
                                     <ul class="mainContent__tellTaleLeft">
                                         <li class="mainContent__tellTale--key">Visit Signups
                                         </li>
-                                        <li class="mainContent__tellTale--value" style="position: absolute; right:0;">
+                                        <li class="mainContent__tellTale--value mainContent__tellTale--position">
                                             124</li>
                                     </ul>
                                     <ul class="mainContent__tellTaleLeft">
                                         <li class="mainContent__tellTale--key">FTD</li>
-                                        <li class="mainContent__tellTale--value" style="position: absolute; right:0;">
+                                        <li class="mainContent__tellTale--value mainContent__tellTale--position">
                                             445</li>
                                     </ul>
                                 </div>
                                 <div class="mainContent__rightHalf">
                                     <ul class="mainContent__tellTaleRight">
                                         <li class="mainContent__tellTale--key">Net deposit</li>
-                                        <li class="mainContent__tellTale--value" style="position: absolute; right:0;">
+                                        <li class="mainContent__tellTale--value mainContent__tellTale--position">
                                             564</li>
                                     </ul>
                                     <ul class="mainContent__tellTaleRight">
                                         <li class="mainContent__tellTale--key">Turn over</li>
-                                        <li class="mainContent__tellTale--value" style="position: absolute; right:0;">
+                                        <li class="mainContent__tellTale--value mainContent__tellTale--position">
                                             432</li>
                                     </ul>
                                 </div>
@@ -194,24 +194,28 @@
 
                             </div>
                             <div class="tableFinance__infoSelector">
-                                <button class="btn-icon btn-icon--noBorder btn-icon--colorGrey ">
+                                <button class="btn-icon btn-icon--noBorder btn-icon--colorGrey"
+                                    onmouseover="hideBar('signups')">
                                     <svg width="18" height="22">
                                         <circle cx="8" cy="12" r="7" fill="blue" />
                                     </svg>Signups
                                 </button>
-                                <button class="btn-icon btn-icon--noBorder btn-icon--colorGrey ">
+                                <button class="btn-icon btn-icon--noBorder btn-icon--colorGrey"
+                                    onmouseover="hideBar('ftd')">
                                     <svg width="18" height="22">
                                         <circle cx="8" cy="12" r="7" fill="orange" />
                                     </svg>FTD
                                 </button>
-                                <button class="btn-icon btn-icon--noBorder btn-icon--colorGrey ">
+                                <button class="btn-icon btn-icon--noBorder btn-icon--colorGrey"
+                                    onmouseover="hideBar('earned')">
                                     <svg width="18" height="22">
                                         <circle cx="8" cy="12" r="7" fill="green" />
                                     </svg>Earned
                                 </button>
                             </div>
-                            <div class="fakeDraw">
-                                <img src="images/picture1.png">
+                            <div class="fakeDraw" onclick="openModal('#chart')">
+                                <!--  <img src="images/picture1.png"> -->
+                                <canvas id="myChart"></canvas>
                             </div>
                         </div>
                     </div>
@@ -447,8 +451,23 @@
                 </div>
             </div>
 
+            <div class="overlay" id="overlay">
+                <div class="modal" id="chart">
+                    <div class="btn-icon btn-close js--close-modal">&nbsp;&nbsp;X</div>
+
+                    <canvas id="myChartModal"></canvas>
+
+
+                    <button class=" btn-icon js--close-modal">Okay</button>
+                </div>
+                <div class="modal" id="nike">
+                    <iframe src="https://en.wikipedia.org/wiki/Just_Do_It" height="1050" width="1680"></iframe>
+                </div>
+            </div>
 
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
     <script src="js/script.js"></script>
 </body>
 
