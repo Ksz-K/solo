@@ -26,63 +26,22 @@ function goToPersonal() {
     var personal = document.getElementById("personal");
     personal.scrollIntoView();
 }
-function openPage1() {
-    var webAddress = document.getElementById('link1').innerHTML;
+function openPage(current) {
+    var webAddress = document.getElementById(current).innerHTML;
     var urlPosition = webAddress.indexOf(' ');
     var urlAddress = webAddress.slice(0, urlPosition);
     window.open(urlAddress);
 }
-function openPage2() {
-    var webAddress = document.getElementById('link2').innerHTML;
-    var urlPosition = webAddress.indexOf(' ');
-    var urlAddress = webAddress.slice(0, urlPosition);
-    window.open(urlAddress);
+
+function addClass(that) {
+
+    if (!that.classList.contains('btn-icon--bigger')) {
+        that.classList.add('btn-icon--bigger')
+    }
 }
-function openPage3() {
-    var webAddress = document.getElementById('link3').innerHTML;
-    var urlPosition = webAddress.indexOf(' ');
-    var urlAddress = webAddress.slice(0, urlPosition);
-    window.open(urlAddress);
-}
-function openPage4() {
-    var webAddress = document.getElementById('link4').innerHTML;
-    var urlPosition = webAddress.indexOf(' ');
-    var urlAddress = webAddress.slice(0, urlPosition);
-    window.open(urlAddress);
-}
-function openPage5() {
-    var webAddress = document.getElementById('link5').innerHTML;
-    var urlPosition = webAddress.indexOf(' ');
-    var urlAddress = webAddress.slice(0, urlPosition);
-    window.open(urlAddress);
-}
-function openPage6() {
-    var webAddress = document.getElementById('link6').innerHTML;
-    var urlPosition = webAddress.indexOf(' ');
-    var urlAddress = webAddress.slice(0, urlPosition);
-    window.open(urlAddress);
-}
-function openPage7() {
-    var webAddress = document.getElementById('link7').innerHTML;
-    var urlPosition = webAddress.indexOf(' ');
-    var urlAddress = webAddress.slice(0, urlPosition);
-    window.open(urlAddress);
-}
-function openPage8() {
-    var webAddress = document.getElementById('link8').innerHTML;
-    var urlPosition = webAddress.indexOf(' ');
-    var urlAddress = webAddress.slice(0, urlPosition);
-    window.open(urlAddress);
-}
-function openPage9() {
-    var webAddress = document.getElementById('link9').innerHTML;
-    var urlPosition = webAddress.indexOf(' ');
-    var urlAddress = webAddress.slice(0, urlPosition);
-    window.open(urlAddress);
-}
-function openPage10() {
-    var webAddress = document.getElementById('link10').innerHTML;
-    var urlPosition = webAddress.indexOf(' ');
-    var urlAddress = webAddress.slice(0, urlPosition);
-    window.open(urlAddress);
+
+function removeClass(that) {
+    if (that.classList.contains('btn-icon--bigger')) {
+        that.classList.remove('btn-icon--bigger')
+    }
 }
