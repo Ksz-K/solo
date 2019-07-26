@@ -80,7 +80,7 @@ body {
   align-items: flex-start;
 }
 .fa-bars {
-  color: grey;
+  color: $base-gray;
   background-color: $darkNav-gray;
 }
 
@@ -144,6 +144,13 @@ body {
   color: #fff;
 }
 
+.navMenu__crate--verticalAllignP:hover .btn-icon {
+  color: #00f;
+}
+
+button[disabled]:hover .fa-bars {
+  color: $darkNav-gray;
+}
 .btn-icon {
   display: inline-block;
   font-weight: 400;
@@ -385,6 +392,8 @@ form {
 
 input[type="date"] {
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   border: none;
   font-size: 1.2rem;
   outline: 1px solid $base-border;
@@ -406,8 +415,11 @@ input[type="date"] {
 }
 
 .tableFinance__infoSelector > .btn-icon:hover {
-  background-color: transparent;
-  color: #0000ff;
+  @include hoverMorph1;
+}
+
+.mainContent__tellTale > .btn-icon:hover {
+  @include hoverMorph1;
 }
 
 .tableLinks {
@@ -458,6 +470,11 @@ input[type="date"] {
     width: 200px;
   }
 
+  .navMenu__crate--leftBorderFocus p {
+    padding: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
   .tableLinks td:nth-child(1) {
     font-size: 0.7rem;
   }
@@ -497,6 +514,10 @@ input[type="date"] {
 }
 
 @media (min-width: 576px) {
+  .btn-icon {
+    font-size: 0.7rem;
+  }
+
   .offset-2 {
     margin-left: 16.666667%;
   }
@@ -592,5 +613,25 @@ input[type="date"] {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-icon {
+    font-size: 0.9rem;
+  }
+
+  .navMenu__crate--remSpacing {
+    word-spacing: 0.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .btn-icon {
+    font-size: 1rem;
+  }
+
+  .navMenu__crate--remSpacing {
+    word-spacing: 1rem;
   }
 }

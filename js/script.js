@@ -1,5 +1,4 @@
 
-'use strict';
 function mobileView() {
     var isHide = document.querySelector('#notStaticMenu').classList.contains('mobile-hide');
 
