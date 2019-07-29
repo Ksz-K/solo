@@ -15,27 +15,6 @@ function mobileView() {
 document.getElementById('date1').value = new Date().toISOString().substring(0, 10);
 document.getElementById('date2').value = new Date().toISOString().substring(0, 10);
 
-function goToGeneral() {
-    var general = document.getElementById("general");
-    general.scrollIntoView();
-}
-
-function goToLinks() {
-    var links = document.getElementById("links");
-    links.scrollIntoView();
-}
-
-function goToPersonal() {
-    var personal = document.getElementById("personal");
-    personal.scrollIntoView();
-}
-function openPage(current) {
-    var webAddress = document.getElementById(current).innerHTML;
-    var urlPosition = webAddress.indexOf(' ');
-    var urlAddress = webAddress.slice(0, urlPosition);
-    window.open(urlAddress);
-}
-
 function addClass(that) {
 
     if (!that.classList.contains('btn-icon--bigger')) {
@@ -97,9 +76,7 @@ function hideBar(whichOne) {
             earned === 1 ? earned = 0 : earned = 1;
             break;
     }
-
     chart();
-
 }
 
 
@@ -182,3 +159,33 @@ var chart2 = new Chart(ctxModal, {
         }]
     },
 });
+
+const linksInternal = document.querySelectorAll('[data-sendlink]');
+
+linksInternal.forEach(function (internalLinks) {
+    internalLinks.addEventListener('click', function (clickInduces) {
+        clickInduces.preventDefault();
+        goTo(this.dataset.sendlink);
+    })
+});
+
+function goTo(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+
+const linksExternal = document.querySelectorAll("[id^='linkTo']");
+
+linksExternal.forEach(function (linkToList) {
+    linkToList.addEventListener('click', function (afterClick) {
+        afterClick.preventDefault();
+        openPage(this.id);
+    })
+});
+
+
+function openPage(current) {
+    var webAddress = document.getElementById(current).innerHTML;
+    var urlPosition = webAddress.indexOf(' ');
+    var urlAddress = webAddress.slice(0, urlPosition);
+    window.open(urlAddress);
+}

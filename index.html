@@ -71,13 +71,13 @@
                         <div class="navMenu__crate navMenu__crate--noBorder navMenu__crate--fullWidth">
                             <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
                                 <p><span class="btn-icon btn-icon__ico--general"
-                                        onclick="goToGeneral()">&nbsp;General</span></p>
+                                        data-sendlink="general">&nbsp;General</span></p>
                             </div>
-                            <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
+                            <div class=" col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
                                 <p><span class="btn-icon btn-icon__ico--details">&nbsp;Details</span></p>
                             </div>
                             <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
-                                <p><span class="btn-icon btn-icon__ico--links" onclick="goToLinks()">&nbsp;Links</span>
+                                <p><span class="btn-icon btn-icon__ico--links" data-sendlink="links">&nbsp;Links</span>
                                 </p>
                             </div>
                             <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
@@ -85,7 +85,7 @@
                             </div>
                             <div class="col-sm-auto  navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
                                 <p><span class="btn-icon btn-icon__ico--personaldata"
-                                        onclick="goToPersonal()">&nbsp;Personal-data</span></p>
+                                        data-sendlink="personal">&nbsp;Personal-data</span></p>
                             </div>
                             <div class="col-sm-auto navMenu__crate--remSpacing navMenu__crate--leftBorderFocus">
                                 <p><span class="btn-icon btn-icon__ico--payout">&nbsp;Payout</span></p>
@@ -234,7 +234,7 @@
                             <table id="table" class="tableLinks">
                                 <tr>
                                     <td>Home page</td>
-                                    <td id="link1" onclick="openPage('link1')">http://www.homepage.com
+                                    <td id="linkTo1">http://www.homepage.com
                                         <span class="tableLinks--hideIcons"><button
                                                 class="btn-icon btn-icon__ico--links btn-icon--noBorder"
                                                 onmouseover="addClass(this);" onmouseout="removeClass(this);"></button>
@@ -246,7 +246,7 @@
                                 </tr>
                                 <tr>
                                     <td>Currently offer</td>
-                                    <td id="link2" onclick="openPage('link2')">http://www.currently.com
+                                    <td id="linkTo2">http://www.currently.com
                                         <span class="tableLinks--hideIcons"><button
                                                 class="btn-icon btn-icon__ico--links btn-icon--noBorder"
                                                 onmouseover="addClass(this);" onmouseout="removeClass(this);"></button>
@@ -258,7 +258,7 @@
                                 </tr>
                                 <tr>
                                     <td>Blurpix</td>
-                                    <td id="link3" onclick="openPage('link3')">http://www.blurpix.com
+                                    <td id="linkTo3">http://www.blurpix.com
                                         <span class="tableLinks--hideIcons"><button
                                                 class="btn-icon btn-icon__ico--links btn-icon--noBorder"
                                                 onmouseover="addClass(this);" onmouseout="removeClass(this);"></button>
@@ -270,7 +270,7 @@
                                 </tr>
                                 <tr>
                                     <td>Your Site</td>
-                                    <td id="link4" onclick="openPage('link4')">http://www.yoursite.com
+                                    <td id="linkTo4">http://www.yoursite.com
                                         <span class="tableLinks--hideIcons"><button
                                                 class="btn-icon btn-icon__ico--links btn-icon--noBorder"
                                                 onmouseover="addClass(this);" onmouseout="removeClass(this);"></button>
@@ -282,7 +282,7 @@
                                 </tr>
                                 <tr>
                                     <td>Google</td>
-                                    <td id="link5" onclick="openPage('link5')">http://www.google.com
+                                    <td id="linkTo5">http://www.google.com
                                         <span class="tableLinks--hideIcons"><button
                                                 class="btn-icon btn-icon__ico--links btn-icon--noBorder"
                                                 onmouseover="addClass(this);" onmouseout="removeClass(this);"></button>
@@ -294,7 +294,7 @@
                                 </tr>
                                 <tr>
                                     <td>Facebook</td>
-                                    <td id="link6" onclick="openPage('link6')">http://www.facebook.com
+                                    <td id="linkTo6">http://www.facebook.com
                                         <span class="tableLinks--hideIcons"><button
                                                 class="btn-icon btn-icon__ico--links btn-icon--noBorder"
                                                 onmouseover="addClass(this);" onmouseout="removeClass(this);"></button>
@@ -306,7 +306,7 @@
                                 </tr>
                                 <tr>
                                     <td>Dashboard</td>
-                                    <td id="link7" onclick="openPage('link7')">http://www.dashboard.com
+                                    <td id="linkTo7">http://www.dashboard.com
                                         <span class="tableLinks--hideIcons"><button
                                                 class="btn-icon btn-icon__ico--links btn-icon--noBorder"
                                                 onmouseover="addClass(this);" onmouseout="removeClass(this);"></button>
@@ -318,7 +318,7 @@
                                 </tr>
                                 <tr>
                                     <td>Blurax</td>
-                                    <td id="link8" onclick="openPage('link8')">http://www.blurax.com
+                                    <td id="linkTo8">http://www.blurax.com
                                         <span class="tableLinks--hideIcons"><button
                                                 class="btn-icon btn-icon__ico--links btn-icon--noBorder"
                                                 onmouseover="addClass(this);" onmouseout="removeClass(this);"></button>
@@ -330,7 +330,7 @@
                                 </tr>
                                 <tr>
                                     <td>Piece of wine</td>
-                                    <td id="link9" onclick="openPage('link9')">http://www.pieceofwine.com
+                                    <td id="linkTo9">http://www.pieceofwine.com
                                         <span class="tableLinks--hideIcons"><button
                                                 class="btn-icon btn-icon__ico--links btn-icon--noBorder"
                                                 onmouseover="addClass(this);" onmouseout="removeClass(this);"></button>
@@ -342,7 +342,7 @@
                                 </tr>
                                 <tr>
                                     <td>Twitter</td>
-                                    <td id="link10" onclick="openPage('link10')">http://www.twitter.com
+                                    <td id="linkTo10">http://www.twitter.com
                                         <span class="tableLinks--hideIcons"><button
                                                 class="btn-icon btn-icon__ico--links btn-icon--noBorder"
                                                 onmouseover="addClass(this);" onmouseout="removeClass(this);"></button>
