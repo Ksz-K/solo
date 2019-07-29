@@ -2,3 +2,15 @@
   background-color: transparent;
   color: #0000ff;
 }
+
+@mixin tellTalePosition {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-content: flex-start;
+  position: relative;
+  border-bottom: 1px solid $base-border;
+  padding-inline-start: 0;
+}
