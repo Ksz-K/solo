@@ -1,0 +1,48 @@
+* [33m48a5d7d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m 4publishing hk
+* [33m5e9a5af[m 4publishing hk
+* [33m2156117[m 4publishing hk
+*   [33m14b05f2[m Merge branch 'master' of github.com:Ksz-K/solo
+[32m|[m[33m\[m  
+[32m|[m * [33m4c446b8[m Set theme jekyll-theme-architect
+* [33m|[m [33me0e1cd6[m added css for publishing
+[33m|[m[33m/[m  
+* [33m3523477[m hk
+* [33mbfda324[m hk
+* [33m7847650[m houseKeeping
+* [33m841b25d[m[33m ([m[1;32mdoPublikacji[m[33m)[m JSON edited for publication
+* [33mb289d50[m Edited JSON file for publication purpose
+* [33md2e950e[m[33m ([m[1;32mtestowo[m[33m)[m Final housekeeping
+* [33m29003f0[m CleanUp CSS
+* [33mc456569[m[33m ([m[1;32mrafactorJS[m[33m)[m JS amendement done
+* [33m1fc6f29[m It works - stage before js refactoring
+* [33m4da492f[m[33m ([m[1;32mAddChart[m[33m)[m Added chart
+* [33m54d4fd6[m cleanUP links done
+* [33me99ce1d[m[33m ([m[1;32mMakeItFullyResponsive[m[33m)[m Responsiveness plus hovering buttons done
+* [33m280ca29[m Responsiveness v0.2
+* [33m8a02847[m Responsiveness v0.1
+* [33mac8d45e[m[33m ([m[1;31morigin/MakeItFullyResponsive[m[33m)[m houseKeeping
+* [33m8b6847d[m sass clean up plus links click
+* [33me971641[m Links do work
+* [33m15e3730[m[33m ([m[1;32mMakeItBEM[m[33m)[m PC done
+* [33mf42c77a[m[33m ([m[1;31morigin/MakeItBEM[m[33m)[m PC view almost OK
+* [33m09f3070[m PC view almost OK
+* [33m8bd2c38[m przed korekta daty
+* [33mf76a25c[m 2nd page done
+* [33m805f736[m 2 pages almost...
+* [33m46e3ea4[m 1st page more less done
+* [33mfd9ef5d[m pc view OK
+* [33m0508917[m nav pol drogi
+* [33mf214357[m gorna belka OK
+* [33ma890964[m icons OK
+* [33mbde7f59[m Podmieniaja sie znaczki2
+* [33m5e0c9ae[m Podmieniaja sie znaczki
+* [33m23c69a8[m[33m ([m[1;32mCleanIT[m[33m)[m finish setup files
+* [33m72b6db5[m[33m ([m[1;32madd-nav[m[33m)[m Setup of nav H and V done
+* [33mfbe53d5[m dziala
+* [33m5956811[m lewa gorna znikaja
+* [33mdf7485d[m krok krok
+* [33ma38c3db[m step 2
+* [33m3a4ceab[m step 1
+* [33m1ed385b[m Setup file structure
+* [33m92fcfdd[m Add readme
+* [33m3310350[m Initial file structure
